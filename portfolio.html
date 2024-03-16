@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio. Portfolio</title>
     <link
       rel="stylesheet"
@@ -16,10 +17,10 @@
   <body>
     <header class="header-container">
       <div class="container nav-container">
+        <a href="./index.html" class="logo"
+          >Web<span class="studio-header">Studio</span></a
+        >
         <nav class="page-nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="studio-header">Studio</span></a
-          >
           <ul class="page-nav">
             <li><a class="nav-link" href="./index.html">Studio</a></li>
             <li>
@@ -29,7 +30,7 @@
           </ul>
         </nav>
         <address>
-          <ul class="page-nav">
+          <ul class="page-nav list">
             <li>
               <a class="contact" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -42,6 +43,22 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -55,7 +72,7 @@
             <li><button type="button" class="btn">Design</button></li>
             <li><button type="button" class="btn">Marketing</button></li>
           </ul>
-          <ul class="card-set">
+          <ul class="card-set action-set">
             <li class="card action-item">
               <div class="action-img">
                 <div class="overlay">
@@ -66,13 +83,19 @@
                   </p>
                 </div>
                 <img
+                  srcset="
+                    ./images/portfolio/pc1.jpg   1x,
+                    ./images/portfolio/pc1@2.jpg 2x
+                  "
                   src="./images/portfolio/pc1.jpg"
                   alt="banking"
                   width="360"
                   height="300" />
               </div>
               <div class="card-info">
-                <h2 class="header-card">Banking App Interface Concept</h2>
+                <h2 class="header-card action-card">
+                  Banking App Interface Concept
+                </h2>
                 <p class="desc">App</p>
               </div>
             </li>
@@ -86,13 +109,17 @@
                   </p>
                 </div>
                 <img
+                  srcset="
+                    ./images/portfolio/pc2.jpg   1x,
+                    ./images/portfolio/pc2@2.jpg 2x
+                  "
                   src="./images/portfolio/pc2.jpg"
                   alt="banking"
                   width="360"
                   height="300" />
               </div>
               <div class="card-info">
-                <h2 class="header-card">Cashless Payment</h2>
+                <h2 class="header-card action-card">Cashless Payment</h2>
                 <p class="desc">Marketing</p>
               </div>
             </li>
@@ -106,13 +133,17 @@
                   </p>
                 </div>
                 <img
+                  srcset="
+                    ./images/portfolio/pc3.jpg   1x,
+                    ./images/portfolio/pc3@2.jpg 2x
+                  "
                   src="./images/portfolio/pc3.jpg"
                   alt="banking"
                   width="360"
                   height="300" />
               </div>
               <div class="card-info">
-                <h2 class="header-card">Meditation App</h2>
+                <h2 class="header-card action-card">Meditation App</h2>
                 <p class="desc">App</p>
               </div>
             </li>
@@ -126,13 +157,17 @@
                   </p>
                 </div>
                 <img
+                  srcset="
+                    ./images/portfolio/pc4.jpg   1x,
+                    ./images/portfolio/pc4@2.jpg 2x
+                  "
                   src="./images/portfolio/pc4.jpg"
                   alt="banking"
                   width="360"
                   height="300" />
               </div>
               <div class="card-info">
-                <h2 class="header-card">Taxi Service</h2>
+                <h2 class="header-card action-card">Taxi Service</h2>
                 <p class="desc">Marketing</p>
               </div>
             </li>
@@ -146,13 +181,17 @@
                   </p>
                 </div>
                 <img
+                  srcset="
+                    ./images/portfolio/pc5.jpg   1x,
+                    ./images/portfolio/pc5@2.jpg 2x
+                  "
                   src="./images/portfolio/pc5.jpg"
                   alt="banking"
                   width="360"
                   height="300" />
               </div>
               <div class="card-info">
-                <h2 class="header-card">Screen Illustrations</h2>
+                <h2 class="header-card action-card">Screen Illustrations</h2>
                 <p class="desc">Design</p>
               </div>
             </li>
@@ -166,13 +205,19 @@
                   </p>
                 </div>
                 <img
+                  srcset="
+                    ./images/portfolio/pc6.jpg   1x,
+                    ./images/portfolio/pc6@2.jpg 2x
+                  "
                   src="./images/portfolio/pc6.jpg"
                   alt="banking"
                   width="360"
                   height="300" />
               </div>
-              <h2 class="header-card">Online Courses</h2>
-              <p class="desc">Marketing</p>
+              <div class="card-info">
+                <h2 class="header-card action-card">Online Courses</h2>
+                <p class="desc">Marketing</p>
+              </div>
             </li>
             <li class="card action-item">
               <div class="action-img">
@@ -184,13 +229,19 @@
                   </p>
                 </div>
                 <img
+                  srcset="
+                    ./images/portfolio/pc7.jpg   1x,
+                    ./images/portfolio/pc7@2.jpg 2x
+                  "
                   src="./images/portfolio/pc7.jpg"
                   alt="banking"
                   width="360"
                   height="300" />
               </div>
               <div class="card-info">
-                <h2 class="header-card">Instagram Stories Concept</h2>
+                <h2 class="header-card action-card">
+                  Instagram Stories Concept
+                </h2>
                 <p class="desc">Design</p>
               </div>
             </li>
@@ -204,6 +255,10 @@
                   </p>
                 </div>
                 <img
+                  srcset="
+                    ./images/portfolio/pc8.jpg   1x,
+                    ./images/portfolio/pc8@2.jpg 2x
+                  "
                   src="./images/portfolio/pc8.jpg"
                   alt="banking"
                   width="360"
@@ -224,13 +279,17 @@
                   </p>
                 </div>
                 <img
+                  srcset="
+                    ./images/portfolio/pc9.jpg   1x,
+                    ./images/portfolio/pc9@2.jpg 2x
+                  "
                   src="./images/portfolio/pc9.jpg"
                   alt="banking"
                   width="360"
                   height="300" />
               </div>
               <div class="card-info">
-                <h2 class="header-card">Fresh Coffee</h2>
+                <h2 class="header-card action-card">Fresh Coffee</h2>
                 <p class="desc">Web Site</p>
               </div>
             </li>
@@ -238,6 +297,72 @@
         </div>
       </section>
     </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" data-modal-close class="close-icon">
+          <use
+            href="./images/icons.svg#icon-close1"
+            class="close-icon-ellipse"></use>
+          <use
+            href="./images/icons.svg#icon-close2"
+            class="close-icon-cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a class="nav-link" href="./index.html">Studio</a></li>
+        <li>
+          <a class="nav-link current" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="nav-link" href="">Contacts</a></li>
+      </ul>
+      <div>
+        <address>
+          <ul class="mobile-address">
+            <li>
+              <a class="contact mobile-tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="contact mobile-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="card-set mobile">
+          <li>
+            <a href="" class="soc-card">
+              <svg width="16" height="16" class="soc-icon">
+                <use href="./images/icons.svg#icon-ih"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="soc-card">
+              <svg width="16" height="16" class="soc-icon">
+                <use href="./images/icons.svg#icon-th"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="soc-card">
+              <svg width="16" height="16" class="soc-icon">
+                <use href="./images/icons.svg#icon-fh"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="soc-card">
+              <svg width="16" height="16" class="soc-icon">
+                <use href="./images/icons.svg#icon-inh"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <footer class="foot">
       <div class="container foot-container">
         <div class="footer-text">
@@ -301,5 +426,11 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
